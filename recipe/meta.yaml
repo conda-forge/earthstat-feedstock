@@ -29,9 +29,13 @@ requirements:
     - tqdm ==4.66.2
     - geopandas ==0.14.3
     - pyproj ==3.6.1
+<<<<<<< 0.5.0_h3e8625
     - cdsapi
     - xarray ==2023.11.0
     - rioxarray
+=======
+    - xarray ==2023.11.0
+>>>>>>> main
 
 test:
   imports:
