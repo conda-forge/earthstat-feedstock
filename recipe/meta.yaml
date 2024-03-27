@@ -29,6 +29,7 @@ requirements:
     - tqdm ==4.66.2
     - geopandas ==0.14.3
     - pyproj ==3.6.1
+    - xarray ==2023.11.0
 
 test:
   imports:
