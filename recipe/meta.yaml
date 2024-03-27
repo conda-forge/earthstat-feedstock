@@ -1,5 +1,5 @@
 {% set name = "earthstat" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - rasterio
     - shapely ==2.0.3
     - numpy ==1.26.4
@@ -29,6 +29,9 @@ requirements:
     - tqdm ==4.66.2
     - geopandas ==0.14.3
     - pyproj ==3.6.1
+    - xarray ==2023.11.0
+    - rioxarray
+    - cdsapi
 
 test:
   imports:
