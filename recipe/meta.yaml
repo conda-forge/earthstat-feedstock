@@ -1,5 +1,5 @@
 {% set name = "earthstat" %}
-{% set version = "0.4.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/earthstat-{{ version }}.tar.gz
-  sha256: 0362e25b55193d885899b40735dfc37c9d2065db5bf3410e38bc64da68f60b5f
+  sha256: cf449be4ba5c79e431c2af4ecc1377077c565271df4d2dbbbab81b2f3bba0799
 
 build:
   entry_points:
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - rasterio
     - shapely ==2.0.3
     - numpy ==1.26.4
@@ -29,6 +29,9 @@ requirements:
     - tqdm ==4.66.2
     - geopandas ==0.14.3
     - pyproj ==3.6.1
+    - xarray ==2023.11.0
+    - rioxarray
+    - cdsapi
 
 test:
   imports:
