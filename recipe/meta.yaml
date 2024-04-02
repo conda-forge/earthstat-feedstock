@@ -1,5 +1,5 @@
 {% set name = "earthstat" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/earthstat-{{ version }}.tar.gz
-  sha256: d36b3176fb322d3f6148789650f6b2e314eddeb9aa5bc006ae011fb50444217d
+  sha256: 5bb37890269f6cbd5e1338597851ee74a30bf32c8497c99bd789db230a9df576
 
 build:
   entry_points:
